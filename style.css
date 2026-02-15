@@ -1,0 +1,5 @@
+.no-hover{
+    background: transparent !important;
+    color: inherit !important;
+    transform: none !important;
+}

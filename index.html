@@ -136,6 +136,7 @@
             </div>
         </div>
     </section>
+
     <!-- Tranding Now -->
     <section>
         <div class="w-9/12 m-auto">
@@ -143,12 +144,23 @@
             <div id="top-rated-card" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                 <!-- Loading state -->
                 <div id="loading" class="col-span-full text-center py-12 text-gray-500">
-                   
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div id="details-container" class="space-y-5"></div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn btn-primary">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
 
     <!-- Js File -->
      <script src="./index.js"></script>

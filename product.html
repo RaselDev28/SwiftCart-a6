@@ -85,17 +85,122 @@
         </div>
     </header>
 
-     <section>
-        <h2 class="text-4xl font-bold mb-8 text-center"><span class="text-sky-400">Our Products</h2>
-
-        <div id="Catagory-container" class="flex gap-5 flex-wrap justify-center mb-5"></div>
+    <section class="py-8 bg-white shadow">
+        <div class="w-11/12 mx-auto">
+            <h2 class="text-2xl font-bold text-center mb-6">Our Products</h2>
+            <div id="category-container" class="flex flex-wrap justify-center gap-4">
+            </div>
+        </div>
     </section>
 
-   
+    <!-- Products Section -->
+    <section id="product-container"
+        class="bg-gray-100 p-10 w-11/12 mx-auto my-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Default message -->
+        <div class="text-center col-span-full rounded-xl bg-sky-100 py-12">
+            <p class="text-xl font-medium text-gray-500">Please Select A Category</p>
+            <h2 class="font-bold text-4xl mt-2">Happy Shopping!!</h2>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="product-modal" class="fixed inset-0 bg-black bg-opacity-60 hidden flex items-center justify-center z-50">
+        <div class="bg-white rounded-2xl max-w-4xl w-11/12 max-h-[90vh] overflow-y-auto p-8 relative">
+            <button id="close-modal"
+                class="absolute top-4 right-6 text-3xl text-gray-600 hover:text-black">&times;</button>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                <img id="modal-image" class="w-full h-96 object-contain rounded-lg" alt="Product">
+
+                <div>
+                    <h2 id="modal-title" class="text-3xl font-bold mb-4"></h2>
+                    <p class="text-2xl font-semibold text-green-600 mb-4">$<span id="modal-price"></span></p>
+
+                    <div class="flex items-center mb-6">
+                        <div id="modal-stars" class="flex text-yellow-400 mr-3"></div>
+                        <span id="modal-rating" class="text-gray-600"></span>
+                    </div>
+
+                    <p id="modal-description" class="text-gray-700 leading-relaxed mb-8"></p>
+
+                    <div class="flex gap-4">
+                        <button class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 font-semibold">
+                            Buy Now
+                        </button>
+                        <button class="bg-green-600 text-white px-8 py-4 rounded-lg hover:bg-green-700 font-semibold">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black">
+        <div class="w-9/12 m-auto py-10 fotter-first sm:grid-cols-4 grid grid-cols-1 sm:items-center gap-5">
+            <div>
+                <h1><a class="text-primary text-3xl font-bold" href="#">SwiftCart</a></h1>
+                <p class="mt-5 text-white">Your one-stop shop for all your fashion and lifestyles need. Quality
+                    products, fast delivery, and excellent support.</p>
+            </div>
+            <div class="text-white">
+                <Span class="fotter-border">Quick Links</Span>
+                <ul class="mt-5">
+                    <li class="hover:text-primary pt-3"><a href="index.html">Home</a></li>
+                    <li class="hover:text-primary pt-3"><a href="product.html">Products</a></li>
+                    <li class="hover:text-primary pt-3"><a href="#">About</a></li>
+                    <li class="hover:text-primary pt-3"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="text-white">
+                <Span class="fotter-border">Support</Span>
+                <ul class="mt-5">
+                    <li class="hover:text-primary pt-3"><a href="#">FAQ</a></li>
+                    <li class="hover:text-primary pt-3"><a href="#">Shipping</a></li>
+                    <li class="hover:text-primary pt-3"><a href="#">Returns</a></li>
+                    <li class="hover:text-primary pt-3"><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="text-white">
+                <Span class="fotter-border">Subscribe To Our Newsletter</Span>
+                <p class="mt-5">The latest news, articles, and resources, sent to your inbox weekly.</p>
+                <div class="mt-5 flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                    <input class="sm:w-[100%] rounded" type="email" value="" placeholder=" Enter Your Email">
+                    <span class="btn btn-primary">Subscribe</span>
+                </div>
+            </div>
+        </div>
+        <div class="pt-5 w-9/12 m-auto flex-col-reverse sm:flex-row flex justify-between pb-10">
+            <div>
+                <span class="text-white">&copy; 2025 SwiftCart, Inc. All rights reserved.</span>
+            </div>
+            <div class="pb-5">
+                <ul class="flex gap-5">
+                    <li><a class="hover:text-primary" href="#">
+                            <i class="fa-brands fa-facebook-f text-white hover:text-primary"></i>
+                        </a></li>
+                    <li><a class="hover:text-primary" href="#">
+                            <i class="fa-brands fa-twitter text-white hover:text-primary"></i>
+                        </a></li>
+                    <li><a class="hover:text-primary" href="#">
+                            <i class="fa-brands fa-instagram text-white hover:text-primary"></i>
+                        </a></li>
+                    <li><a class="hover:text-primary" href="#">
+                            <i class="fa-brands fa-linkedin-in text-white hover:text-primary"></i>
+                        </a></li>
+                    <li><a class="hover:text-primary" href="#">
+                            <i class="fa-solid fa-envelope text-white hover:text-primary"></i>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
 
     <!-- Js File -->
-     <script src="./product.js"></script>
-     <!-- <script src="./index.js"></script> -->
+    <script src="./product.js"></script>
+    <!-- <script src="./index.js"></script> -->
 
 </body>
 

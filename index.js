@@ -137,7 +137,7 @@ async function showProductDetails(productId) {
     }
 }
 
-trandingCard.addEventListener('click', function(details) {
+trandingCard.addEventListener('click', function (details) {
     const btn = details.target.closest('.details-btn');
     if (!btn) return;
 

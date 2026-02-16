@@ -36,6 +36,27 @@
     <header class="container w-9/12 m-auto">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
+                <a class="text-2xl font-bold text-primary">SwiftCart</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-2 font-bold [&_a:hover]:!bg-transparent [&_a:hover]:!text-inherit">
+                    <li class="hover:text-primary">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="hover:text-primary">
+                        <a href="#">Products</a>
+                    </li>
+                    <li class="hover:text-primary">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="hover:text-primary">
+                        <a href="#">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="hover:text-primary" href=""><i class="fa-solid fa-cart-shopping"></i></a>
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -58,30 +79,8 @@
                         <li class="hover:text-primary">
                             <a href="#">Contact</a>
                         </li>
-
                     </ul>
                 </div>
-                <a class="text-2xl font-bold text-primary">SwiftCart</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-2 font-bold [&_a:hover]:!bg-transparent [&_a:hover]:!text-inherit">
-                    <li class="hover:text-primary">
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="hover:text-primary">
-                        <a href="#">Products</a>
-                    </li>
-                    <li class="hover:text-primary">
-                        <a href="#">About</a>
-                    </li>
-                    <li class="hover:text-primary">
-                        <a href="#">Contact</a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="navbar-end">
-                <a class="hover:text-primary" href=""><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </div>
     </header>
@@ -109,7 +108,7 @@
     </section>
 
     <!-- Card Section -->
-    <section class="sm:mb-5 mb-5">
+    <section class="sm:mb-5 mb-5 bg-gray-200 py-8">
         <div class="my-9 text-center">
             <h2 class="text-3xl font-bold mb-3">Why Choose Us</h2>
             <p class="text-xl font-semibold">We provide the best shoping experience with top-notch services</p>
@@ -137,6 +136,22 @@
             </div>
         </div>
     </section>
+    <!-- Tranding Now -->
+    <section>
+        <div class="w-9/12 m-auto">
+            <h1 class="text-3xl font-bold mb-8">Tranding Now</h1>
+            <div id="top-rated-card" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <!-- Loading state -->
+                <div id="loading" class="col-span-full text-center py-12 text-gray-500">
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Js File -->
+     <script src="./index.js"></script>
 </body>
 
 </html>
